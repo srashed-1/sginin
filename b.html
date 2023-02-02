@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width" />
+<title>b</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="b.css"  url="b.css" type="text/css"/>
+</head>
+
+<body  dir="ltr">
+
+   
+
+
+
+
+<div id="container">
+
+    <span id="aa"></span>
+    <span id="bb"></span>
+    <span id="cc"></span>
+    <span id="ee"></span>
+
+    <div class="form signup">
+        <h2>sign up</h2>
+
+    <div id="inputbux">
+        <input type="text" required="required">
+        <i class="fa-regular fa-user"></i>
+        <span>username</span>
+    </div>
+    <div id="inputbux">
+        <input type="text" required="required">
+        <i class="fa-regular fa-envelope"></i>
+        <span>emailaddress</span>
+    </div>
+    <div id="inputbux">
+        <input type="password" required="required">
+        <i class="fa-solid fa-lock"></i>
+        <span>creat password</span>
+    </div>
+    <div id="inputbux">
+        <input type="password" required="required">
+        <i class="fa-solid fa-lock"></i>
+        <span>confirm password</span>
+    </div>
+    <div id="inputbux">
+        <input type="submit" value="creat account">
+    </div>
+      <P>Already amember ? <a href="#"
+         id="login"> log in</a></P>
+    </div>
+
+
+
+
+    <div class="form signin">
+        <h2>sign in</h2>
+    <div id="inputbux">
+        <input type="text" required="required">
+        <i class="fa-regular fa-user"></i>
+        <span>username or email</span>
+    </div>
+    <div id="inputbux">
+        <input type="password" required="required">
+        <i class="fa-solid fa-lock"></i>
+        <span>password</span>
+    </div>
+        <div id="inputbux">
+            <input type="submit" value="login">
+        </div>
+          <P>not registered ? <a href="#"
+             id="creat">creat account</a></P>
+    </div>
+    </div>
+
+</div>
+<script>let login =document.querySelector('#login')
+    let creat =document.querySelector('#creat')
+    let container =document.querySelector('#container')
+    
+    login.onclick = function(){
+        container.classList.add('signinForm')
+    }
+    creat.onclick = function(){
+        container.classList.remove('signinForm')
+    }
+    </script>
+
+    <script src="b.js"></script>
+
+</body>
+</html>
