@@ -22,68 +22,83 @@
     <span id="ee"></span>
 
     <div class="form signup">
-        <h2>sign up</h2>
+        <h2>Sign Up</h2>
 
     <div id="inputbux">
-        <input type="text" required="required">
+        <input type="text" required="required" id="username">
         <i class="fa-regular fa-user"></i>
-        <span>username</span>
+        <span>Username</span>
     </div>
     <div id="inputbux">
-        <input type="text" required="required">
+        <input type="text" required="required" id="emailaddress">
         <i class="fa-regular fa-envelope"></i>
-        <span>emailaddress</span>
+        <span>Email Address</span>
     </div>
     <div id="inputbux">
-        <input type="password" required="required">
+        <input type="password" required="required" id="creatpassword">
         <i class="fa-solid fa-lock"></i>
-        <span>creat password</span>
+        <span>Creat Password</span>
     </div>
+
     <div id="inputbux">
-        <input type="password" required="required">
+        <input type="password" required="required" id="confirmpassword">
         <i class="fa-solid fa-lock"></i>
-        <span>confirm password</span>
+        <span id="span">Confirm Password</span>
+
     </div>
+
     <div id="inputbux">
-        <input type="submit" value="creat account">
+<div id="divspan">
+
+</div>
     </div>
-      <P>Already amember ? <a href="#"
-         id="login"> log in</a></P>
+
+    <div id="inputbux">
+        <input type="submit" value="creat account" id="creataccount">
+    </div>
+      <P>Already Amember ? <a href="#"
+         id="login"> Log In</a></P>
     </div>
 
 
 
 
     <div class="form signin">
-        <h2>sign in</h2>
+        <h2>Sign In</h2>
     <div id="inputbux">
-        <input type="text" required="required">
+        <input type="text" required="required" id="usernameoremial">
         <i class="fa-regular fa-user"></i>
-        <span>username or email</span>
+        <span>Username or Email</span>
     </div>
     <div id="inputbux">
-        <input type="password" required="required">
+        <input type="password" required="required" id="passwordd">
         <i class="fa-solid fa-lock"></i>
-        <span>password</span>
+        <span>Password</span>
     </div>
         <div id="inputbux">
-            <input type="submit" value="login">
+            <input type="submit" value="login" id="loginn">
         </div>
-          <P>not registered ? <a href="#"
-             id="creat">creat account</a></P>
+          <P>Not Registered ? <a href="#"
+             id="creat">Create Account</a></P>
     </div>
     </div>
 
 </div>
-<script>let login =document.querySelector('#login')
+<script>
+
     let creat =document.querySelector('#creat')
-    let container =document.querySelector('#container')
-    
+   
     login.onclick = function(){
         container.classList.add('signinForm')
+        container.style.height = '380px' ;
     }
     creat.onclick = function(){
         container.classList.remove('signinForm')
+    if(divspan.innerHTML = ''){
+        container.style.height = '502px'
+    }else{
+        container.style.height = '575px'
+    }
     }
     </script>
 
