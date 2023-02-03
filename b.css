@@ -210,6 +210,41 @@ font-weight: 300;
                         transform: translateY(-100%);
                     }
                 }
+#container .form #inputbux #divspan span {
+    position: absolute;
+    left: 0;
+    padding: 12px 10px 12px 48px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight:300 ;
+    letter-spacing: 0.07em;
+    color: rgb(255, 0, 0);
+}
+#container .form #inputbux #divspan #error{
+    padding: 8px 6px 8px 48px;
+    border: none;
+    width: 100%;
+    background: rgba(34, 4, 14, 0.654);
+    border: 1px solid  rgba(255,255, 255, 0.1);
+    color: rgb(52, 5, 5);
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(252, 2, 2, 0.236),
+    5px 5px 15px  rgba(14, 1, 1, 0.555);
+    outline: none;
+}
+#container .form #inputbux #divspan i {
+    position: absolute;
+top: 15px;
+left: 16px;
+width: 25px;
+padding-right: 8px;
+padding: 2px 0;
+color: rgb(255, 0, 0);
+border-right: 1px solid rgb(255, 0, 0);
+transform: translateY(-6px);
+}
 
 
 
